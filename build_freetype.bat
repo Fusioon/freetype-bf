@@ -6,9 +6,11 @@ PUSHD %~dp0
 cd submodules/freetype
 
 @IF EXIST .build GOTO HAS_CONFIG
+@copy ..\\CMakeLists.txt .\\CMakeLists.txt /V /Y
 mkdir .build
 cd .build
-cmake ../. -G"Visual Studio 16 2019" -Ax64 -Thost=x64
+cmake ../. -G"Visual Studio 16 2019" -Ax64 -Thost=x64 -DMSVC_STATIC_LIB="ON"
+@GOTO DOBUILD
 
 :HAS_CONFIG
 cd .build
