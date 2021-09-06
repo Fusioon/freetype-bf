@@ -1,0 +1,18 @@
+FileVersion = 1
+
+[Project]
+Name = "freetype"
+DefaultNamespace = "Freetype"
+
+[Configs.Debug.Win64]
+CLibType = "Static"
+LibPaths = ["$(ProjectDir)/dist/win/x64/freetype.lib"]
+
+[Configs.Release.Win64]
+LibPaths = ["$(ProjectDir)/dist/win/x64/freetype.lib"]
+
+[Configs.Paranoid.Win64]
+LibPaths = ["$(ProjectDir)/dist/win/x64/freetype.lib"]
+
+[Configs.Test.Win64]
+LibPaths = ["$(ProjectDir)/dist/win/x64/freetype.lib"]
