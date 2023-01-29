@@ -6,13 +6,13 @@ DefaultNamespace = "Freetype"
 
 [Configs.Debug.Win64]
 CLibType = "Static"
-LibPaths = ["$(ProjectDir)/dist/win/x64/freetype.lib"]
+LibPaths = ["$(ProjectDir)/build/bin/Release/freetype.lib"]
 
 [Configs.Release.Win64]
-LibPaths = ["$(ProjectDir)/dist/win/x64/freetype.lib"]
+LibPaths = ["$(ProjectDir)/build/bin/Release/freetype.lib"]
 
 [Configs.Paranoid.Win64]
-LibPaths = ["$(ProjectDir)/dist/win/x64/freetype.lib"]
+LibPaths = ["$(ProjectDir)/build/bin/Release/freetype.lib"]
 
 [Configs.Test.Win64]
-LibPaths = ["$(ProjectDir)/dist/win/x64/freetype.lib"]
+LibPaths = ["$(ProjectDir)/build/bin/Release/freetype.lib"]
